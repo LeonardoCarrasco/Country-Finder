@@ -1,5 +1,5 @@
 const CountryData = ({ data }) => {
-
+    console.log(data)
     return (
       <div className="country">
         {!data ? (
@@ -7,7 +7,7 @@ const CountryData = ({ data }) => {
         ) : (
           <>
             <h1>{data.name.common}</h1>
-            <p>Capital: {data.capital > 1 ? data.capital[0] : ""}</p>
+            <p>Capital: {data.hasOwnProperty('capital') ? data.capital[0] : ""}</p>
             <p>population: {data.population}</p>
             <h2>Languages</h2>
             <ul>
