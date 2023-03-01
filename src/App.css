@@ -1,0 +1,27 @@
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App{
+  padding: 2rem;
+}
+
+.container-countries{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item{
+  padding: 1rem;
+  border: 1px solid #ffffff2f;
+}
+
+.country{
+  display: block;
+  width: 100%;
+}
