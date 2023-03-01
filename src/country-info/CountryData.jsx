@@ -1,5 +1,4 @@
 const CountryData = ({ data }) => {
-    console.log(data)
     return (
       <div className="country">
         {!data ? (
