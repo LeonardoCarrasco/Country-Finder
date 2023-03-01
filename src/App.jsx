@@ -37,6 +37,7 @@ export default function App() {
 
   }, [filterCountry]);
 
+  console.log(countries)
 
   return (
     <div className="App">
