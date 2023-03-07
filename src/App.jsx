@@ -12,7 +12,7 @@ export default function App() {
   const [nation, setNation] = useState([]);
 
   const handleChange = (e) => {
-    setFilterCountry(e.target.value);
+    setFilterCountry(e.target.value.toLowerCase());
     e.target.value === "" ? setShow(false) : "";
   };
 
@@ -36,8 +36,6 @@ export default function App() {
     }
 
   }, [filterCountry]);
-
-  console.log(countries)
 
   return (
     <div className="App">
